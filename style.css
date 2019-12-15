@@ -1,0 +1,199 @@
+
+.wrapper {
+  padding: 15px 6%;
+  color: #ffffff;
+  opacity: 100%; }
+  @media (max-width: 1200px) {
+    .wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 30px 1%;
+      flex-wrap: wrap; } }
+
+.tune-up {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  line-height: 30px; }
+  @media (max-width: 1200px) {
+    .tune-up {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      margin-left: -4.5%; } }
+
+.settings {
+  display: flex;
+  margin-bottom: 15px; }
+  .settings__btn-refresh {
+    display: inline-block;
+    background: darkslategrey;
+    width: 50px;
+    height: 30px;
+    margin-right: 20px; }
+    @media (max-width: 1200px) {
+      .settings__btn-refresh {
+        margin-right: 0; } }
+  .settings__btn-language {
+    display: inline-block;
+    background: darkslategrey;
+    width: 50px;
+    height: 29px;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+    color: #ffffff; }
+    @media (max-width: 1200px) {
+      .settings__btn-language {
+        margin-right: 0; } }
+    .settings__btn-language-content {
+      display: none;
+      position: absolute;
+      width: 50px;
+      background: darkslategray; }
+  .settings__btn-temperature {
+    display: inline-block;
+    background: darkslategrey;
+    width: 50px;
+    height: 30px; }
+
+.search {
+  display: flex; }
+  .search__input {
+    display: inline-block;
+    height: 24px; }
+    @media (max-width: 1200px) {
+      .search__input {
+        width: 106px; } }
+  .search__submit {
+    display: inline-block;
+    background: darkslategrey;
+    width: 100px;
+    height: 30px; }
+    @media (max-width: 1200px) {
+      .search__submit {
+        width: 50px; } }
+  .search__voice {
+    display: inline-block;
+    background: darkslategrey;
+    width: 30px;
+    height: 30px; }
+    @media (max-width: 1200px) {
+      .search__voice {
+        display: none; } }
+    .search__voice div {
+      background-image: url(images/dd2a8197bbaf9f420abb68d307bd92cf.png);
+      width: 30px;
+      height: 30px; }
+
+.data {
+  width: 80%; }
+  .data__city {
+    display: inline-block;
+    width: 100%;
+    font-size: 50px;
+    height: 30px; }
+    @media (max-width: 1200px) {
+      .data__city {
+        height: auto;
+        font-size: 70px; } }
+  .data__date {
+    display: inline-block;
+    width: 100%;
+    font-size: 30px;
+    height: 30px; }
+    @media (max-width: 1200px) {
+      .data__date {
+        font-size: 45px; } }
+  .data__weather {
+    display: inline-block;
+    font-size: 15px; }
+    .data__weather_temperature {
+      display: inline-block;
+      font-size: 200px;
+      letter-spacing: 0; }
+    .data__weather_icon {
+      display: inline-block;
+      width: 150px;
+      height: 150px; }
+      .data__weather_icon span {
+        font-size: 100px;
+        position: relative;
+        top: 140px;
+        z-index: 1; }
+      .data__weather_icon img {
+        position: relative;
+        top: -82px;
+        left: -30px; }
+    .data__weather_other-data {
+      display: inline-block;
+      height: 150px;
+      font-size: 30px;
+      position: relative;
+      left: -90px; }
+      @media (max-width: 1200px) {
+        .data__weather_other-data {
+          position: static; } }
+  .data__three-days {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+    height: 200px;
+    font-size: 34px; }
+    .data__three-days img {
+      width: 65px;
+      height: 65px;
+      margin-top: -18px; }
+    @media (max-width: 1200px) {
+      .data__three-days {
+        width: 300px;
+        height: 400px;
+        font-size: 34px;
+        flex-direction: column;
+        align-items: center; } }
+  @media (max-width: 1200px) {
+    .data {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
+
+.map {
+  width: 400px;
+  height: 400px;
+  z-index: 99;
+  position: absolute;
+  right: 6.5%;
+  top: 10vh; }
+  .map__cord {
+    color: #ffffff;
+    font-size: 30px;
+    display: inline-block;
+    margin-top: 10px; }
+    @media (max-width: 1200px) {
+      .map__cord {
+        font-size: 21px;
+        display: inline; } }
+  @media (max-width: 1200px) {
+    .map {
+      position: unset;
+      width: 350px;
+      height: 375px; } }
+
+#map {
+  width: 400px;
+  height: 400px; }
+  @media (max-width: 1200px) {
+    #map {
+      width: 350px;
+      height: 350px; } }
+
+.button-hover:hover {
+  cursor: pointer;
+  background: darkgoldenrod; }
+
+.selected-unit {
+  background: burlywood; }
+
